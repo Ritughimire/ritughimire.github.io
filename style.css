@@ -89,6 +89,14 @@ p {
 	margin-bottom: 0;
 }
 
+.section {
+	margin-bottom: 30px;
+}
+
+.section:hover {
+	background-color: #f5f5f5;
+}
+
 .profile-pic {
 	width: 200px;
 	height: 200px;
