@@ -10,7 +10,7 @@ body {
 h1 {
 	font-size: 36px;
 	font-weight: bold;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
 	color: #555555;
@@ -89,31 +89,36 @@ p {
 	margin-bottom: 0;
 }
 
-.section {
-	background-color: #f1f1f1;
-	padding: 10px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	border-radius: 5px;
+.profile-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.section:hover {
-	background-color: #d1d1d1;
-	font-weight: bold;
+.profile-pic img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
 }
 
-.section h2 {
-	margin: 0;
-	color: #555555;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase;
+@media screen and (max-width: 768px) {
+	.profile-pic {
+		margin-top: 30px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
 }
-
-.section ul {
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-
-.section li {
-	margin
